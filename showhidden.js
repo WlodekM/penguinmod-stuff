@@ -1,6 +1,6 @@
 // show hidden blocks, run after the ext was loaded
 
-// get all loaded ext idsa
+// get all loaded ext ids
 vm.extensionManager._loadedExtensions.keys().forEach(k => {
     // find the blocks for the ext in the runtime
     let extblocks = (vm.extensionManager.runtime._blockInfo.find(a => a.id == k));
